@@ -26,7 +26,7 @@ def main():
     args = command_parser.command_parser()
     player_win_count = 0
     opponent_win_count = 0
-    for _ in range(args.turns):
+    for _ in range(args["turns"]):
         status = play()
         if status is True:
             player_win_count += 1
