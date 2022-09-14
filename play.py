@@ -22,7 +22,7 @@ def play():
         else:
             break
     opponent = random.choice(["r", "p", "s"])
-    print(opponent)
+    print(f"The opponent has picked {opponent}.")
 
     if player == opponent:
         return
