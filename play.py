@@ -1,5 +1,5 @@
 import random
-import command_parser
+import command
 
 
 def play():
@@ -23,7 +23,7 @@ def play():
 
 def main():
     """Start the play"""
-    args = command_parser.parse()
+    args = command.parse()
     player_win_count = 0
     opponent_win_count = 0
     for _ in range(args["turns"]):
