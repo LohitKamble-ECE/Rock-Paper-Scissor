@@ -23,7 +23,7 @@ def play():
 
 def main():
     """Start the play"""
-    args = command_parser.command_parser()
+    args = command_parser.parse()
     player_win_count = 0
     opponent_win_count = 0
     for _ in range(args["turns"]):
